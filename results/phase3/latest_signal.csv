@@ -1,0 +1,19 @@
+﻿target,date,model_set,current_value,current_regime,p_persist,p_reverse,signal,signal_label,strength
+ktb_10y,2026-05-28,top3,4.147,UP,0.9820239489830188,,-1,UP→continue (cut duration / cut credit),STRONG
+ktb_10y,2026-05-28,top1,4.147,UP,0.9500681940189566,,-1,UP→continue (cut duration / cut credit),STRONG
+ktb_30y,2026-05-28,top3,4.124,UP,0.9990738164802576,,-1,UP→continue (cut duration / cut credit),STRONG
+ktb_30y,2026-05-28,top1,4.124,UP,0.9980626781697336,,-1,UP→continue (cut duration / cut credit),STRONG
+ktb_3y,2026-05-28,top3,3.766,UP,0.9747988916402285,,-1,UP→continue (cut duration / cut credit),STRONG
+ktb_3y,2026-05-28,top1,3.766,UP,0.9621110859203925,,-1,UP→continue (cut duration / cut credit),STRONG
+ktb_5y,2026-05-28,top3,3.992,UP,0.9913366441580647,,-1,UP→continue (cut duration / cut credit),STRONG
+ktb_5y,2026-05-28,top1,3.992,UP,0.9985081185665903,,-1,UP→continue (cut duration / cut credit),STRONG
+spread_aa_3y,2026-05-28,top3,0.6180000000000003,UP,0.8993259890966766,,-1,UP→continue (cut duration / cut credit),STRONG
+spread_aa_3y,2026-05-28,top1,0.6180000000000003,UP,0.9883448315379572,,-1,UP→continue (cut duration / cut credit),STRONG
+spread_bbb_3y,2026-05-28,top3,6.426,UP,0.9547705509671789,,-1,UP→continue (cut duration / cut credit),STRONG
+spread_bbb_3y,2026-05-28,top1,6.426,UP,0.9948461464449164,,-1,UP→continue (cut duration / cut credit),STRONG
+spread_ktb_10_30,2026-05-28,top3,-0.023000000000000576,UP,0.6162819571925334,,-1,UP→continue (cut duration / cut credit),MODERATE
+spread_ktb_10_30,2026-05-28,top1,-0.023000000000000576,UP,0.7111777507123573,,-1,UP→continue (cut duration / cut credit),STRONG
+spread_ktb_3_10,2026-05-28,top3,0.3810000000000002,UP,0.8953225540097467,,-1,UP→continue (cut duration / cut credit),STRONG
+spread_ktb_3_10,2026-05-28,top1,0.3810000000000002,UP,0.9423577346603959,,-1,UP→continue (cut duration / cut credit),STRONG
+spread_ktb_5_30,2026-05-28,top3,0.13199999999999967,UP,0.7614874263311292,,-1,UP→continue (cut duration / cut credit),STRONG
+spread_ktb_5_30,2026-05-28,top1,0.13199999999999967,UP,0.8849815778997995,,-1,UP→continue (cut duration / cut credit),STRONG

@@ -1,0 +1,67 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  KBOND Direction Signal  —  as of 2026-05-11
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  P(UP) = H일 후 [금리 상승 / 스프레드 와이드닝] 확률
+  KTB   : P(UP) > 0.55 → 듀레이션 축소  /  < 0.45 → 듀레이션 확대
+  Spread: P(UP) > 0.55 → 크레딧 축소    /  < 0.45 → 크레딧 확대
+
+  ── ktb_10y  (현재값 = 3.950%)
+      H=10일  P(UP) ens=0.779  [lgbm=0.94 xgb=0.89 rf=0.68 et=0.67 gbm=0.78 logreg=0.72]  → ▼ 듀레이션 축소
+      H=20일  P(UP) ens=0.582  [lgbm=0.71 xgb=0.65 rf=0.57 et=0.61 gbm=0.69 logreg=0.26]  → ▼ 듀레이션 축소
+
+  ── ktb_30y  (현재값 = 3.850%)
+      H=10일  P(UP) ens=0.532  [lgbm=0.67 xgb=0.61 rf=0.62 et=0.60 gbm=0.55 logreg=0.15]  → = 중립
+      H=20일  P(UP) ens=0.579  [lgbm=0.67 xgb=0.75 rf=0.57 et=0.61 gbm=0.72 logreg=0.16]  → ▼ 듀레이션 축소
+
+  ── ktb_3y  (현재값 = 3.598%)
+      H=10일  P(UP) ens=0.640  [lgbm=0.81 xgb=0.79 rf=0.63 et=0.62 gbm=0.58 logreg=0.40]  → ▼ 듀레이션 축소
+      H=20일  P(UP) ens=0.668  [lgbm=0.76 xgb=0.75 rf=0.56 et=0.59 gbm=0.70 logreg=0.66]  → ▼ 듀레이션 축소
+
+  ── ktb_5y  (현재값 = 3.777%)
+      H=10일  P(UP) ens=0.670  [lgbm=0.83 xgb=0.66 rf=0.57 et=0.58 gbm=0.74 logreg=0.64]  → ▼ 듀레이션 축소
+      H=20일  P(UP) ens=0.743  [lgbm=0.89 xgb=0.83 rf=0.57 et=0.61 gbm=0.71 logreg=0.86]  → ▼ 듀레이션 축소
+
+  ── spread_aa_3y  (현재값 = 0.647% pt)
+      H=10일  P(UP) ens=0.686  [lgbm=0.80 xgb=0.75 rf=0.57 et=0.57 gbm=0.64 logreg=0.78]  → ▼ 크레딧 축소
+      H=20일  P(UP) ens=0.811  [lgbm=0.92 xgb=0.84 rf=0.69 et=0.65 gbm=0.79 logreg=0.98]  → ▼ 크레딧 축소
+
+  ── spread_bbb_3y  (현재값 = 6.439% pt)
+      H=10일  P(UP) ens=0.542  [lgbm=0.46 xgb=0.48 rf=0.56 et=0.55 gbm=0.64 logreg=0.56]  → = 중립
+      H=20일  P(UP) ens=0.716  [lgbm=0.78 xgb=0.64 rf=0.65 et=0.66 gbm=0.66 logreg=0.91]  → ▼ 크레딧 축소
+
+  ── spread_kepco_5y  (현재값 = 0.212% pt)
+      H=10일  P(UP) ens=0.197  [lgbm=0.04 xgb=0.09 rf=0.42 et=0.46 gbm=0.15 logreg=0.03]  → ▲ 크레딧 확대
+      H=20일  P(UP) ens=0.379  [lgbm=0.28 xgb=0.34 rf=0.63 et=0.60 gbm=0.43 logreg=0.02]  → ▲ 크레딧 확대
+
+  ── spread_ktb_10_30  (현재값 = -0.100% pt)
+      H=10일  P(UP) ens=0.448  [lgbm=0.40 xgb=0.37 rf=0.47 et=0.53 gbm=0.48 logreg=0.43]  → ▲ 크레딧 확대
+      H=20일  P(UP) ens=0.251  [lgbm=0.15 xgb=0.08 rf=0.43 et=0.49 gbm=0.30 logreg=0.05]  → ▲ 크레딧 확대
+
+  ── spread_ktb_3_10  (현재값 = 0.352% pt)
+      H=10일  P(UP) ens=0.523  [lgbm=0.67 xgb=0.73 rf=0.53 et=0.51 gbm=0.65 logreg=0.06]  → = 중립
+      H=20일  P(UP) ens=0.244  [lgbm=0.12 xgb=0.14 rf=0.39 et=0.44 gbm=0.38 logreg=0.00]  → ▲ 크레딧 확대
+
+  ── spread_ktb_5_30  (현재값 = 0.073% pt)
+      H=10일  P(UP) ens=0.431  [lgbm=0.43 xgb=0.38 rf=0.51 et=0.54 gbm=0.62 logreg=0.11]  → ▲ 크레딧 확대
+      H=20일  P(UP) ens=0.244  [lgbm=0.04 xgb=0.12 rf=0.40 et=0.48 gbm=0.41 logreg=0.01]  → ▲ 크레딧 확대
+
+  ── us_10y_xl  (현재값 = 4.469% pt)
+      H=10일  P(UP) ens=0.564  [lgbm=0.71 xgb=0.77 rf=0.49 et=0.52 gbm=0.53 logreg=0.36]  → ▼ 크레딧 축소
+      H=20일  P(UP) ens=0.502  [lgbm=0.28 xgb=0.52 rf=0.49 et=0.53 gbm=0.46 logreg=0.72]  → = 중립
+
+  ── us_ig_oas_xl  (현재값 = 0.750% pt)
+      H=10일  P(UP) ens=0.729  [lgbm=0.77 xgb=0.83 rf=0.58 et=0.55 gbm=0.66 logreg=0.98]  → ▼ 크레딧 축소
+      H=20일  P(UP) ens=0.644  [lgbm=0.69 xgb=0.81 rf=0.50 et=0.51 gbm=0.48 logreg=0.86]  → ▼ 크레딧 축소
+
+  ── us_spr_10_30  (현재값 = 0.565% pt)
+      H=10일  P(UP) ens=0.594  [lgbm=0.43 xgb=0.61 rf=0.52 et=0.54 gbm=0.50 logreg=0.95]  → ▼ 크레딧 축소
+      H=20일  P(UP) ens=0.528  [lgbm=0.72 xgb=0.73 rf=0.53 et=0.58 gbm=0.46 logreg=0.15]  → = 중립
+
+  ── us_spr_2_10  (현재값 = 0.490% pt)
+      H=10일  P(UP) ens=0.619  [lgbm=0.68 xgb=0.65 rf=0.53 et=0.45 gbm=0.70 logreg=0.71]  → ▼ 크레딧 축소
+      H=20일  P(UP) ens=0.339  [lgbm=0.37 xgb=0.33 rf=0.38 et=0.41 gbm=0.49 logreg=0.06]  → ▲ 크레딧 확대
+
+  ── us_spr_5_30  (현재값 = 0.917% pt)
+      H=10일  P(UP) ens=0.601  [lgbm=0.59 xgb=0.48 rf=0.56 et=0.50 gbm=0.66 logreg=0.82]  → ▼ 크레딧 축소
+      H=20일  P(UP) ens=0.540  [lgbm=0.69 xgb=0.69 rf=0.56 et=0.56 gbm=0.69 logreg=0.05]  → = 중립

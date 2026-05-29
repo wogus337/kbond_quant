@@ -1,0 +1,44 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  KBOND Phase3 Signal — as of 2026-05-28
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  신호 매핑 (원본 phase3):
+    DOWN regime + persist↑ → 듀레이션/크레딧 확대 (+1)
+    DOWN regime + reverse↑ → 듀레이션/크레딧 축소 (-1)
+    UP   regime + persist↑ → 듀레이션/크레딧 축소 (-1)
+    UP   regime + reverse↑ → 듀레이션/크레딧 확대 (+1)
+
+  ── ktb_10y            현재값=4.147%  regime=UP
+      [Top-3 앙상블] P(persist)=0.982  → signal=-1  [STRONG]  (UP→continue (cut duration / cut credit))
+      [Top-1 단일 ] P(persist)=0.950  → signal=-1  [STRONG]  (UP→continue (cut duration / cut credit))
+
+  ── ktb_30y            현재값=4.124%  regime=UP
+      [Top-3 앙상블] P(persist)=0.999  → signal=-1  [STRONG]  (UP→continue (cut duration / cut credit))
+      [Top-1 단일 ] P(persist)=0.998  → signal=-1  [STRONG]  (UP→continue (cut duration / cut credit))
+
+  ── ktb_3y             현재값=3.766%  regime=UP
+      [Top-3 앙상블] P(persist)=0.975  → signal=-1  [STRONG]  (UP→continue (cut duration / cut credit))
+      [Top-1 단일 ] P(persist)=0.962  → signal=-1  [STRONG]  (UP→continue (cut duration / cut credit))
+
+  ── ktb_5y             현재값=3.992%  regime=UP
+      [Top-3 앙상블] P(persist)=0.991  → signal=-1  [STRONG]  (UP→continue (cut duration / cut credit))
+      [Top-1 단일 ] P(persist)=0.999  → signal=-1  [STRONG]  (UP→continue (cut duration / cut credit))
+
+  ── spread_aa_3y       현재값=0.618% pt  regime=UP
+      [Top-3 앙상블] P(persist)=0.899  → signal=-1  [STRONG]  (UP→continue (cut duration / cut credit))
+      [Top-1 단일 ] P(persist)=0.988  → signal=-1  [STRONG]  (UP→continue (cut duration / cut credit))
+
+  ── spread_bbb_3y      현재값=6.426% pt  regime=UP
+      [Top-3 앙상블] P(persist)=0.955  → signal=-1  [STRONG]  (UP→continue (cut duration / cut credit))
+      [Top-1 단일 ] P(persist)=0.995  → signal=-1  [STRONG]  (UP→continue (cut duration / cut credit))
+
+  ── spread_ktb_10_30   현재값=-0.023% pt  regime=UP
+      [Top-3 앙상블] P(persist)=0.616  → signal=-1  [MODERATE]  (UP→continue (cut duration / cut credit))
+      [Top-1 단일 ] P(persist)=0.711  → signal=-1  [STRONG]  (UP→continue (cut duration / cut credit))
+
+  ── spread_ktb_3_10    현재값=0.381% pt  regime=UP
+      [Top-3 앙상블] P(persist)=0.895  → signal=-1  [STRONG]  (UP→continue (cut duration / cut credit))
+      [Top-1 단일 ] P(persist)=0.942  → signal=-1  [STRONG]  (UP→continue (cut duration / cut credit))
+
+  ── spread_ktb_5_30    현재값=0.132% pt  regime=UP
+      [Top-3 앙상블] P(persist)=0.761  → signal=-1  [STRONG]  (UP→continue (cut duration / cut credit))
+      [Top-1 단일 ] P(persist)=0.885  → signal=-1  [STRONG]  (UP→continue (cut duration / cut credit))

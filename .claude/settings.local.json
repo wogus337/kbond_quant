@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(python direction_strategy.py --tenor ktb_10y --horizons 10 --start 20140101 2>&1 | Select-Object -First 80)",
+      "PowerShell(python -c \"import pyarrow; print\\('pyarrow', pyarrow.__version__\\)\"; python -c \"import fastparquet; print\\('fastparquet', fastparquet.__version__\\)\" 2>&1 | Select-Object -Last 5)",
+      "PowerShell(pip install *)",
+      "PowerShell(python direction_strategy.py --tenor ktb_10y --horizons 10 --start 20140101 2>&1 | Select-Object -Last 30)",
+      "PowerShell(python direction_strategy.py 2>&1 | Select-Object -Last 60)",
+      "PowerShell(python direction_strategy.py --targets ktb_10y spread_aa_3y --horizons 20 --models lgbm xgb logreg 2>&1 | Select-Object -Last 50)",
+      "PowerShell(python -c \"import optuna; print\\('optuna', optuna.__version__\\)\")",
+      "PowerShell(python phase1_train.py --targets spread_kepco_5y --horizons 20 --models lgbm xgb logreg --hpo-trials 5 --hpo-splits 3 --output-dir results/_smoke_p1 2>&1 | Select-Object -Last 60)",
+      "PowerShell(python phase1_train.py --targets spread_kepco_5y --horizons 20 --models lgbm xgb logreg --hpo-trials 5 --hpo-splits 3 --output-dir results/_smoke_p1 2>&1 | Select-Object -Last 40)",
+      "PowerShell(python phase2_review.py --phase1-dir results/_smoke_p1 --phase2-dir results/_smoke_p2 2>&1 | Select-Object -Last 25)",
+      "PowerShell(python phase3_predict.py --phase1-dir results/_smoke_p1 --phase2-dir results/_smoke_p2 --output-dir results/_smoke_p3 2>&1 | Select-Object -Last 45)",
+      "PowerShell(python -c \"import torch; print\\('torch', torch.__version__, 'cuda', torch.cuda.is_available\\(\\)\\)\" 2>&1 | Select-Object -Last 3)",
+      "PowerShell(python phase1_train.py --targets spread_kepco_5y --horizons 20 --models lgbm xgb lstm logreg --hpo-trials 3 --hpo-splits 3 --n-seeds 2 --top-features 50 --output-dir results/_smoke_p1 2>&1 | Select-Object -Last 60)",
+      "PowerShell(python -c \"import hmmlearn; print\\('hmmlearn', hmmlearn.__version__\\)\" 2>&1 | Select-Object -Last 3)",
+      "PowerShell(python phase1_train.py --targets ktb_10y --lookback-weeks 8 --target-thr-bp 0 --regime-strength 0 --models lgbm logreg --hpo-trials 3 --hpo-splits 3 --n-seeds 1 --top-features 50 --output-dir results/_smoke_p1 2>&1 | Select-Object -Last 60)",
+      "PowerShell(python phase1_train.py --targets ktb_10y --lookback-weeks 8 --target-thr-bp 0 --regime-strength 0 --models lgbm logreg --hpo-trials 3 --hpo-splits 3 --n-seeds 1 --top-features 50 --output-dir results/_smoke_p1 2>&1 | Select-Object -Last 40)",
+      "PowerShell(python phase3_predict.py --phase1-dir results/_smoke_p1 --phase2-dir results/_smoke_p2 --output-dir results/_smoke_p3 2>&1 | Select-Object -Last 30)",
+      "Bash(python phase3_predict.py)"
+    ]
+  }
+}

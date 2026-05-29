@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Streamlit secrets (NEVER COMMIT — 관리자 credentials)
+.streamlit/secrets.toml
+
+# 로그
+*.log
+phase1.log
+phase1_retrain.log
+direction_strategy.log
+direction_train.log
+
+# phase1 재학습 상태 (앱 실행 시 자동 생성)
+.phase1_progress.json
+.phase1_retrain.pid
+
+# 체크포인트 (재개용. Cloud엔 불필요, 매우 큼)
+results/phase1/_ckpt/
+
+# 스크래치/백업
+results/_validate_bd/
+results/_mon_test/
+results/_ckpt_test/
+results/phase1_backup_*/
+results/phase1_ktb_10y_only/
+results/direction_old_*/
+
+# 데이터 캐시 진단
+data_cache/_logs.csv
+data_cache/_summary.csv
+
+# OS / 에디터
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
