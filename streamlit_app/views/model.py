@@ -1,17 +1,11 @@
-"""모델 · 트레이딩 시스템 설명."""
+"""모델 · 트레이딩 시스템 설명 (인증 불필요, 일반 공개)."""
 import streamlit as st
 
-from lib import KTB_TARGETS, TARGET_LABEL, get_topn_models, SIGNAL_MAPPING_MD
+from lib import SIGNAL_MAPPING_MD
 from theme import apply_theme, banner
-from auth import require_login
 
 apply_theme()
-require_login("모델 · 트레이딩 시스템 설명")
 banner("모델 · 트레이딩 시스템 설명")
-
-target = st.selectbox(
-    "타겟", KTB_TARGETS,
-    format_func=lambda t: f"{t}  —  {TARGET_LABEL[t]}")
 
 st.markdown("### 1. 시스템 개요")
 st.markdown("""
@@ -46,15 +40,13 @@ st.markdown("""
 st.markdown("### 3. 시그널 매핑 (phase3)")
 st.markdown(SIGNAL_MAPPING_MD)
 
-st.markdown(f"### 4. **{TARGET_LABEL[target]}** Top-3 모델")
-models = get_topn_models(target, 3)
-if not models.empty:
-    show = models[["rank2","run_id","model","accuracy","auc",
-                    "hit@60","cov@60","hit@70","cov@70","composite"]].copy()
-    show.columns = ["rank","run_id","model","accuracy","AUC",
-                     "hit@60","cov@60","hit@70","cov@70","composite"]
-    st.dataframe(show, hide_index=True, use_container_width=True)
-    st.caption("run_id = `L{lookback_weeks}W_F{forward_weeks}W_R{retrain_days}d_T{target_thr_bp}bp_S{regime_strength_min}`")
+st.markdown("### 4. 모델 선정 방식")
+st.markdown("""
+타겟별 Top-3 모델은 **운용 앙상블**로 사용됨. 각 타겟의 구체적 모델 구성 + 메트릭은
+**듀레이션 / 장단기스프레드 / 회사채스프레드** 페이지의 **'타겟 분석'** 탭 하단에서 확인.
+
+`run_id` 표기: `L{lookback_weeks}W_F{forward_weeks}W_R{retrain_days}d_T{target_thr_bp}bp_S{regime_strength_min}`
+""")
 
 st.markdown("### 5. 트레이딩 운용 가이드")
 st.markdown("""
