@@ -38,3 +38,4 @@ data_cache/_summary.csv
 Thumbs.db
 .vscode/
 .idea/
+.claude/
