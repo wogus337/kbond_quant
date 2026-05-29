@@ -98,8 +98,8 @@ def render_recent_vs_actual(targets: list, key_prefix: str,
                               help="P(persist) 컷오프. 높일수록 강한 신호만 표시")
 
     is_spread = str(target).startswith("spread")
-    up_lbl   = "스프레드 상승" if is_spread else "금리 상승"
-    down_lbl = "스프레드 하락" if is_spread else "금리 하락"
+    up_lbl   = "스프레드 확대" if is_spread else "금리 상승"
+    down_lbl = "스프레드 축소" if is_spread else "금리 하락"
 
     # trigger → 강도 등급
     strg_name = ("STRONG" if trigger >= 0.65 else
